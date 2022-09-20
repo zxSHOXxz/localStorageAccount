@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://site-assets.fontawesome.com/releases/v6.1.2/css/all.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous" />
+    <link rel="stylesheet" href="css/style.css">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+        <div class="container gap-5">
+            <a class="navbar-brand" href="#">SHOP</a>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0 gap-2">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Cart</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="icons d-flex gap-4 text-white d-none d-md-flex">
+                <i class="fa-regular fa-heart"></i>
+                <i class="fa-regular fa-cart-shopping"></i>
+            </div>
+
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+        </div>
+    </nav>
+
+
+    <div class="hero py-5">
+        <div class="container">
+            <div class="hero__icons d-flex justify-content-between">
+                <button class="btn btn-secondary text-white" data-bs-toggle="modal" data-bs-target="#modal">Edit
+                    Account</button>
+                <div class="trash d-flex gap-2">
+                    <button class="btn btn-success text-white" data-bs-toggle="modal"
+                        data-bs-target="#archive">Archives</button>
+                    <button class="btn btn-danger text-white" data-bs-toggle="offcanvas"
+                        data-bs-target="#offcanvasRight" aria-controls="offcanvasRight">Trash</button>
+                </div>
+            </div>
+            <div class="customize py-4">
+                <i class="fa-regular fa-sliders"></i>
+                <span>Customize</span>
+
+            </div>
+            <div class="filters__name fw-bold d-flex justify-content-between gap-2">
+                <div class="acc_type bg-transparent  accountType">
+                    <!-- Example split danger button -->
+                    <div class="btn-group bg-transparent bg-transparent">
+                        <button type="button" class="btn btn-secondary">memmbership type</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item bronze" href="#">Bronze</a></li>
+                            <li><a class="dropdown-item platinum" href="#">Platinum</a></li>
+                            <li><a class="dropdown-item gold" href="#">Gold</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="acc_date  bg-transparent createdDate">
+                    <div class="btn-group bg-transparent">
+                        <button type="button" class="btn btn-secondary">created date</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item lastCreate" href="#">last create</a></li>
+                            <li><a class="dropdown-item firstCreate" href="#">first create</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="acc_name bg-transparent  nameFilter">
+                    <div class="btn-group bg-transparent">
+                        <button type="button" class="btn btn-secondary">Account Type</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item web" href="#">web</a></li>
+                            <li><a class="dropdown-item desktop" href="#">desktop</a></li>
+                            <li><a class="dropdown-item mobile" href="#">mobile</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="acc_price bg-transparent  price">
+                    <div class="btn-group bg-transparent">
+                        <button type="button" class="btn btn-secondary">price</button>
+                        <button type="button" class="btn btn-secondary dropdown-toggle dropdown-toggle-split"
+                            data-bs-toggle="dropdown" aria-expanded="false">
+                            <span class="visually-hidden">Toggle Dropdown</span>
+                        </button>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item highPrice" href="#">high price </a></li>
+                            <li><a class="dropdown-item downPrice" href="#">down price </a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="cards d-flex row row-cols-4 mx-2">
+                <div class="d-flex flex-wrap py-5 gap-2 card-parent cardsss col">
+                    <div class="card text-bg-primary my-5 two">
+                        <div class="card-header d-flex align-items-center justify-content-center">
+                            <img src="img/243919597_1514379448925859_6395230020815094908_n (1).jpg" alt="img"
+                                class="img-fluid w-25 rounded-circle">
+                            <div class="namess d-flex flex-column text-center mx-auto">
+                                <p class="username fs-5">zxSHOXxz</p>
+                                <p class="text-warning fs-5 cups">platinum</p>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <h5 class="card-title text-danger mt-1 mb-3">web dev</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk
+                                of the
+                                card's content.</p>
+                            <div
+                                class="control__card__button row row-cols-3 d-flex justify-content-between align-items-center gap-2">
+                                <button type="button" class="btn col btn-success flex-grow-1 archive">Archive</button>
+                                <button type="button" class="btn col btn-danger flex-grow-1 remove">Remove</button>
+                                <button type="button" class="btn col btn-danger flex-grow-1 edit" data-bs-toggle="modal"
+                                    data-bs-target="#edit">Edit</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+    </div>
+
+
+
+    <div class="modal edit" tabindex="-1" id="edit">
+        <div class="modal-dialog mmw">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Edit Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form action="post" class="d-flex flex-column gap-3">
+                            <input type="text" placeholder="Enter First Name" class="py-1 px-3">
+                            <input type="text" placeholder="Enter Last Name" class="py-1 px-3">
+                            <input type="file" name="imgForm" id="imgForm" accept="image/*">
+                            <select name="memebership" id="memebership" class="memebershipp">
+                                <option selected disabled value="defult">--memebership-select--</option>
+                                <option value="bronze">bronze</option>
+                                <option value="platinum">platinum</option>
+                                <option value="gold">gold</option>
+                            </select>
+                            <select name="job" id="job" class="jopb">
+                                <option value="defult" selected disabled>--job-select--</option>
+                                <option value="web">web dev </option>
+                                <option value="mobile">mobile dev </option>
+                                <option value="desktop">desktop dev</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary sv_chng" data-bs-dismiss="modal"
+                        aria-label="Close">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal add__form" tabindex="-1" id="modal">
+        <div class="modal-dialog mmw">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Add Account</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container">
+                        <form action="post" class="d-flex flex-column gap-3">
+                            <input type="text" placeholder="Enter First Name" class="py-1 px-3">
+                            <input type="text" placeholder="Enter Last Name" class="py-1 px-3">
+                            <input type="file" name="imgForm" id="imgForm" accept="image/*">
+                            <select name="memebership" id="memebership" class="memebershipp">
+                                <option selected disabled value="defult">--memebership-select--</option>
+                                <option value="bronze">bronze</option>
+                                <option value="platinum">platinum</option>
+                                <option value="gold">gold</option>
+                            </select>
+                            <select name="job" id="job" class="jopb">
+                                <option value="defult" selected disabled>--job-select--</option>
+                                <option value="web">web dev </option>
+                                <option value="mobile">mobile dev </option>
+                                <option value="desktop">desktop dev</option>
+                            </select>
+                        </form>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary sv_chng" data-bs-dismiss="modal"
+                        aria-label="Close">Save changes</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal archive_modal " tabindex="-1" id="archive">
+        <div class="modal-dialog modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Archive</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body d-flex p-5 justify-content-between flex-wrap row row-cols-4">
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+    <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasRight"
+        aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasRightLabel">Trash</h5>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body trash__offcanvas d-flex align-items-center row row-cols-1">
+
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous">
+    </script>
+    <!-- <script src="js/app.js"></script> -->
+    <script src="js/localStorage.js"></script>
+</body>
+
+</html>

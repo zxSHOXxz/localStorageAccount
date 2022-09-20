@@ -1,0 +1,25 @@
+{
+	"folders": [
+		{
+			"path": "."
+		},
+		{
+			"path": "../WebCourseFe/Template"
+		},
+		{
+			"path": "../../next-level-css-creative-hover-and-animation-effects-main/01 - Creative CSS Effects"
+		},
+		{
+			"path": "../../next-level-css-creative-hover-and-animation-effects-main/02 - Creative Cube Hover Effects"
+		},
+		{
+			"path": "../../next-level-css-creative-hover-and-animation-effects-main/03- Creative Javascript Effects"
+		},
+		{
+			"path": "../../../../Downloads/AnimatedLoginForm/AnimatedLoginForm"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "Tra"
+	}
+}
